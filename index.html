@@ -228,47 +228,6 @@ nav{
 }
 .btn-outline:hover{border-color:var(--gold);color:var(--gold)}
 
-/* HERO RIGHT — PHOTO */
-.hero-right{
-  position:relative;overflow:hidden;
-  background:var(--dark2);
-}
-.hero-photo{
-  width:100%;height:100%;
-  object-fit:cover;object-position:center top;
-  display:block;
-  filter:grayscale(15%) contrast(1.05);
-}
-.hero-photo-overlay{
-  position:absolute;inset:0;
-  background:linear-gradient(
-    90deg,
-    rgba(13,13,14,0.55) 0%,
-    transparent 40%,
-    transparent 80%,
-    rgba(13,13,14,0.3) 100%
-  );
-}
-.hero-stat-card{
-  position:absolute;bottom:2rem;right:2rem;
-  background:var(--card);
-  border:1px solid var(--border2);
-  border-left:3px solid var(--gold);
-  padding:1rem 1.4rem;
-}
-.stat-num{
-  font-family:'Playfair Display',serif;
-  font-size:2.2rem;font-weight:500;color:var(--gold);line-height:1;
-}
-.stat-label{font-size:0.75rem;color:var(--text2);letter-spacing:0.06em;margin-top:0.3rem}
-.hero-decor{
-  position:absolute;top:4rem;right:3rem;
-  font-family:'Playfair Display',serif;
-  font-size:10rem;font-weight:300;
-  color:rgba(122,158,126,0.06);line-height:1;
-  pointer-events:none;user-select:none;
-}
-
 /* TRUST STRIP */
 .trust-strip{
   background:var(--dark3);
@@ -282,22 +241,18 @@ nav{
   font-size:0.78rem;letter-spacing:0.05em;color:var(--text2);
   white-space:nowrap;
 }
-.trust-icon{
-  width:20px;height:20px;stroke:var(--gold);fill:none;flex-shrink:0;
-}
+.trust-icon{width:20px;height:20px;stroke:var(--gold);fill:none;flex-shrink:0}
 .trust-div{width:1px;height:1.5rem;background:var(--border2)}
 
 /* SECTIONS */
 .section{padding:7rem 6rem}
 .section-dark{background:var(--dark2)}
-
 .section-tag{
   display:flex;align-items:center;gap:0.8rem;
   font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;
   color:var(--gold);margin-bottom:1.5rem;
 }
 .section-tag::before{content:'';display:block;width:2rem;height:1px;background:var(--gold)}
-
 .section-title{
   font-family:'Playfair Display',serif;
   font-size:2.8rem;font-weight:400;line-height:1.15;
@@ -307,36 +262,21 @@ nav{
 
 /* ABOUT */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
-.about-text p{
-  font-size:0.95rem;color:var(--text2);line-height:1.9;
-  margin-bottom:1.2rem;font-weight:300;
-}
+.about-text p{font-size:0.95rem;color:var(--text2);line-height:1.9;margin-bottom:1.2rem;font-weight:300}
 .about-photo-wrap{position:relative}
-.about-photo{
-  width:100%;aspect-ratio:4/5;
-  object-fit:cover;object-position:center top;
-  display:block;
-  border:1px solid var(--border);
-}
+.about-photo{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;display:block;border:1px solid var(--border)}
 .about-badge{
   position:absolute;bottom:-1.5rem;right:-1.5rem;
   background:var(--gold);color:var(--dark);
-  padding:1.2rem 1.5rem;text-align:center;
-  min-width:110px;
+  padding:1.2rem 1.5rem;text-align:center;min-width:110px;
 }
-.badge-num{
-  font-family:'Playfair Display',serif;
-  font-size:2rem;font-weight:500;line-height:1;display:block;
-}
+.badge-num{font-family:'Playfair Display',serif;font-size:2rem;font-weight:500;line-height:1;display:block}
 .badge-text{font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;display:block;margin-top:0.25rem}
-
 .cred-list{display:flex;flex-direction:column;gap:0.8rem;margin-top:2rem}
 .cred-item{
   display:flex;align-items:flex-start;gap:1rem;
-  padding:1rem 1.2rem;
-  background:var(--dark3);
-  border:1px solid var(--border);
-  border-left:2px solid var(--gold);
+  padding:1rem 1.2rem;background:var(--dark3);
+  border:1px solid var(--border);border-left:2px solid var(--gold);
 }
 .cred-icon{color:var(--gold);font-size:1rem;margin-top:0.1rem;flex-shrink:0}
 .cred-text strong{display:block;font-size:0.84rem;font-weight:500;color:var(--text);margin-bottom:0.15rem}
@@ -344,164 +284,73 @@ nav{
 
 /* SERVICES */
 .services-header{text-align:center;max-width:560px;margin:0 auto 4rem}
-.services-grid{
-  display:grid;grid-template-columns:repeat(3,1fr);
-  border:1px solid var(--border);
-}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--border)}
 .service-card{
-  padding:2.2rem 1.8rem;
-  border-right:1px solid var(--border);
-  border-bottom:1px solid var(--border);
-  background:var(--dark2);
+  padding:2.2rem 1.8rem;border-right:1px solid var(--border);
+  border-bottom:1px solid var(--border);background:var(--dark2);
   transition:all 0.3s;cursor:default;
 }
 .service-card:hover{background:var(--card);border-color:var(--border2)}
 .service-card:nth-child(3n){border-right:none}
-.service-num{
-  font-family:'Playfair Display',serif;
-  font-size:1.6rem;color:rgba(122,158,126,0.2);
-  font-weight:700;margin-bottom:1rem;display:block;
-}
-.service-card h3{
-  font-family:'Playfair Display',serif;
-  font-size:1.1rem;font-weight:500;color:var(--white);
-  margin-bottom:0.7rem;
-}
+.service-num{font-family:'Playfair Display',serif;font-size:1.6rem;color:rgba(122,158,126,0.2);font-weight:700;margin-bottom:1rem;display:block}
+.service-card h3{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:500;color:var(--white);margin-bottom:0.7rem}
 .service-card p{font-size:0.83rem;color:var(--text3);line-height:1.75;font-weight:300}
 .service-card:hover h3{color:var(--gold)}
 
 /* PROCESS */
 .process-section{background:var(--dark3);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-.process-grid{
-  display:grid;grid-template-columns:repeat(4,1fr);gap:0;
-  margin-top:4rem;position:relative;
-}
-.process-grid::before{
-  content:'';position:absolute;top:2.5rem;left:2rem;right:2rem;
-  height:1px;background:var(--border2);
-}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:4rem;position:relative}
+.process-grid::before{content:'';position:absolute;top:2.5rem;left:2rem;right:2rem;height:1px;background:var(--border2)}
 .process-step{padding:0 2rem 0 0;position:relative}
-.step-circle{
-  width:5rem;height:5rem;border-radius:50%;
-  border:1px solid var(--border2);
-  display:flex;align-items:center;justify-content:center;
-  margin-bottom:2rem;background:var(--dark3);position:relative;z-index:1;
-}
-.step-num-txt{
-  font-family:'Playfair Display',serif;
-  font-size:1.2rem;font-weight:400;color:var(--gold);
-}
-.process-step h4{
-  font-family:'Playfair Display',serif;
-  font-size:1.05rem;font-weight:500;color:var(--white);margin-bottom:0.7rem;
-}
+.step-circle{width:5rem;height:5rem;border-radius:50%;border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;margin-bottom:2rem;background:var(--dark3);position:relative;z-index:1}
+.step-num-txt{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:400;color:var(--gold)}
+.process-step h4{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:500;color:var(--white);margin-bottom:0.7rem}
 .process-step p{font-size:0.82rem;color:var(--text3);line-height:1.75;font-weight:300}
 
 /* TESTIMONIALS */
 .testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:4rem}
-.testimonial-card{
-  background:var(--card);border:1px solid var(--border);
-  padding:2rem;
-}
+.testimonial-card{background:var(--card);border:1px solid var(--border);padding:2rem}
 .stars{display:flex;gap:3px;margin-bottom:1rem}
 .star{color:var(--gold);font-size:0.8rem}
-.quote-mark{
-  font-family:'Playfair Display',serif;font-size:3.5rem;
-  color:rgba(122,158,126,0.25);line-height:0.8;display:block;margin-bottom:0.8rem;
-}
-.testimonial-card p{
-  font-family:'Playfair Display',serif;font-style:italic;
-  font-size:0.98rem;color:var(--text2);line-height:1.75;
-  margin-bottom:1.5rem;
-}
+.quote-mark{font-family:'Playfair Display',serif;font-size:3.5rem;color:rgba(122,158,126,0.25);line-height:0.8;display:block;margin-bottom:0.8rem}
+.testimonial-card p{font-family:'Playfair Display',serif;font-style:italic;font-size:0.98rem;color:var(--text2);line-height:1.75;margin-bottom:1.5rem}
 .author{display:flex;align-items:center;gap:0.8rem}
-.author-avatar{
-  width:34px;height:34px;border-radius:50%;
-  background:var(--gold-pale);border:1px solid var(--border2);
-  display:flex;align-items:center;justify-content:center;
-  font-size:0.72rem;font-weight:500;color:var(--gold);
-}
+.author-avatar{width:34px;height:34px;border-radius:50%;background:var(--gold-pale);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;font-size:0.72rem;font-weight:500;color:var(--gold)}
 .author-info strong{display:block;font-size:0.8rem;font-weight:500;color:var(--text)}
 .author-info span{font-size:0.72rem;color:var(--text3)}
 
 /* FAQ */
 .faq-wrap{max-width:780px;margin:4rem auto 0}
 .faq-item{border-bottom:1px solid var(--border)}
-.faq-q{
-  width:100%;background:none;border:none;
-  padding:1.4rem 0;display:flex;justify-content:space-between;align-items:center;
-  cursor:pointer;text-align:left;
-  font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:400;
-  color:var(--text);gap:1rem;
-}
-.faq-arrow{
-  flex-shrink:0;width:24px;height:24px;
-  border:1px solid var(--border2);border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  transition:all 0.3s;color:var(--gold);font-size:1rem;
-  font-family:monospace;
-}
+.faq-q{width:100%;background:none;border:none;padding:1.4rem 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;text-align:left;font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:400;color:var(--text);gap:1rem}
+.faq-arrow{flex-shrink:0;width:24px;height:24px;border:1px solid var(--border2);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:all 0.3s;color:var(--gold);font-size:1rem;font-family:monospace}
 .faq-item.open .faq-arrow{background:var(--gold);border-color:var(--gold);color:var(--dark);transform:rotate(45deg)}
-.faq-a{
-  max-height:0;overflow:hidden;
-  transition:max-height 0.35s ease,padding 0.35s ease;
-  font-size:0.88rem;color:var(--text3);line-height:1.85;font-weight:300;
-}
+.faq-a{max-height:0;overflow:hidden;transition:max-height 0.35s ease,padding 0.35s ease;font-size:0.88rem;color:var(--text3);line-height:1.85;font-weight:300}
 .faq-item.open .faq-a{max-height:300px;padding-bottom:1.5rem}
 
 /* BOOKING */
 .booking-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
-.booking-left h2{
-  font-family:'Playfair Display',serif;
-  font-size:2.8rem;font-weight:400;line-height:1.15;
-  color:var(--white);margin-bottom:1.2rem;
-}
+.booking-left h2{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:400;line-height:1.15;color:var(--white);margin-bottom:1.2rem}
 .booking-left h2 em{font-style:italic;color:var(--gold)}
 .booking-left p{font-size:0.9rem;color:var(--text2);line-height:1.85;margin-bottom:2rem;font-weight:300}
 .contact-list{display:flex;flex-direction:column;gap:0.8rem;margin-top:2rem}
 .contact-item{display:flex;align-items:center;gap:0.8rem;font-size:0.82rem;color:var(--text2)}
 .contact-item svg{width:18px;height:18px;stroke:var(--gold);fill:none;flex-shrink:0}
-
-.booking-form{
-  background:var(--card);border:1px solid var(--border);
-  padding:2.5rem;
-}
-.form-title{
-  font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:400;
-  color:var(--white);margin-bottom:1.5rem;
-}
+.booking-form{background:var(--card);border:1px solid var(--border);padding:2.5rem}
+.form-title{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:400;color:var(--white);margin-bottom:1.5rem}
 .form-group{margin-bottom:1.1rem}
-.form-label{
-  display:block;font-size:0.72rem;letter-spacing:0.12em;
-  text-transform:uppercase;color:var(--text3);margin-bottom:0.5rem;
-}
-.form-group input,
-.form-group select,
-.form-group textarea{
-  width:100%;padding:0.8rem 1rem;
-  background:var(--dark3);border:1px solid var(--border);
-  color:var(--text);font-family:'Inter',sans-serif;font-size:0.88rem;
-  outline:none;transition:border-color 0.2s;
-}
+.form-label{display:block;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text3);margin-bottom:0.5rem}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:0.8rem 1rem;background:var(--dark3);border:1px solid var(--border);color:var(--text);font-family:'Inter',sans-serif;font-size:0.88rem;outline:none;transition:border-color 0.2s}
 .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--gold)}
 .form-group select{appearance:none}
 .form-group textarea{resize:vertical;min-height:90px}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.form-submit{
-  width:100%;padding:1rem;
-  background:var(--gold);color:var(--dark);
-  border:none;cursor:pointer;
-  font-family:'Inter',sans-serif;font-size:0.78rem;
-  letter-spacing:0.12em;text-transform:uppercase;
-  font-weight:500;transition:all 0.25s;margin-top:0.5rem;
-}
+.form-submit{width:100%;padding:1rem;background:var(--gold);color:var(--dark);border:none;cursor:pointer;font-family:'Inter',sans-serif;font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:500;transition:all 0.25s;margin-top:0.5rem}
 .form-submit:hover{background:var(--gold2)}
+.form-submit:disabled{opacity:0.6;cursor:not-allowed}
 
 /* FOOTER */
-footer{
-  background:#0a0a0b;border-top:1px solid var(--border);
-  padding:4rem 6rem 2rem;
-}
+footer{background:#0a0a0b;border-top:1px solid var(--border);padding:4rem 6rem 2rem}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid var(--border);margin-bottom:2rem}
 .footer-logo{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--white)}
 .footer-logo span{color:var(--gold)}
@@ -515,15 +364,12 @@ footer{
 /* ANIMATIONS */
 .animate-up{opacity:0;transform:translateY(28px);transition:opacity 0.7s ease,transform 0.7s ease}
 .animate-up.visible{opacity:1;transform:translateY(0)}
-
 .hero-left>*{animation:fadeUp 0.8s ease forwards;opacity:0}
 .hero-left>*:nth-child(1){animation-delay:0.1s}
 .hero-left>*:nth-child(2){animation-delay:0.25s}
 .hero-left>*:nth-child(3){animation-delay:0.38s}
 .hero-left>*:nth-child(4){animation-delay:0.5s}
 .hero-left>*:nth-child(5){animation-delay:0.62s}
-.hero-right{animation:fadeIn 1.2s ease 0.3s forwards;opacity:0}
-
 @keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 
@@ -531,10 +377,8 @@ footer{
 @media(max-width:900px){
   nav{padding:1rem 1.5rem}
   .nav-links{display:none}
-  .hero{grid-template-columns:1fr}
-  .hero-left{padding:3rem 1.5rem}
+  .hero-left{padding:3rem 1.5rem;max-width:100%}
   .hero-title{font-size:2.6rem}
-  .hero-right{height:55vw;min-height:280px}
   .trust-strip{padding:1.5rem;flex-wrap:wrap;gap:1rem}
   .trust-div{display:none}
   .section{padding:4rem 1.5rem}
@@ -551,11 +395,6 @@ footer{
 </head>
 <body>
 
-<!-- PHOTO DATA -->
-<script>
-const PHOTO_DATA = "PHOTO_PLACEHOLDER";
-</script>
-
 <!-- NAV -->
 <nav id="mainNav">
   <a href="#" class="nav-logo">Sava <span>Pivnički</span></a>
@@ -569,13 +408,11 @@ const PHOTO_DATA = "PHOTO_PLACEHOLDER";
 </nav>
 
 <!-- HERO -->
-<section class="hero" id="hero" style="position:relative;overflow:hidden"><div style="position:absolute;right:4rem;top:50%;transform:translateY(-50%);font-family:'Playfair Display',serif;font-size:18rem;font-weight:300;color:rgba(122,158,126,0.04);pointer-events:none;user-select:none;line-height:1">ψ</div>
+<section class="hero" id="hero" style="position:relative;overflow:hidden">
+  <div style="position:absolute;right:4rem;top:50%;transform:translateY(-50%);font-family:'Playfair Display',serif;font-size:18rem;font-weight:300;color:rgba(122,158,126,0.04);pointer-events:none;user-select:none;line-height:1">ψ</div>
   <div class="hero-left">
     <div class="hero-tag">Psihološko savetovanje · Online i uživo · Srbija</div>
-    <h1 class="hero-title">
-      Mesto gde <br>
-      možeš biti <em>iskren</em>
-    </h1>
+    <h1 class="hero-title">Mesto gde <br>možeš biti <em>iskren</em></h1>
     <p class="hero-name">Sava Pivnički · Diplomirani psiholog</p>
     <blockquote class="hero-quote">
       Nosimo se sa mnogo toga svakog dana. Ponekad se osmehujemo, a iznutra osećamo pritisak, tugu ili zbunjenost. Ne moraš kroz sve sam.
@@ -585,7 +422,6 @@ const PHOTO_DATA = "PHOTO_PLACEHOLDER";
       <a href="#o-meni" class="btn-outline">Saznaj više</a>
     </div>
   </div>
-
 </section>
 
 <!-- TRUST STRIP -->
@@ -625,7 +461,6 @@ const PHOTO_DATA = "PHOTO_PLACEHOLDER";
       <p>Diplomirao sam psihologiju na Filozofskom fakultetu 2005. godine i od tada radim sa ljudima koji žele da bolje razumeju sebe i svoje odnose sa svetom.</p>
       <p>Verujem da svaki razgovor može biti početak promene. Razgovor koji nije osuđivanje, ne davanje gotovih odgovora — već zajedničko traganje za onim što ti već znaš, a možda nisi rekao naglas.</p>
       <p>Psiholosko savetovanje nije terapija u kliničkom smislu — to je siguran prostor u kome možeš da govoriš slobodno. Bez pritiska, bez etiketa, bez lažnih obećanja.</p>
-
       <div class="cred-list">
         <div class="cred-item">
           <div class="cred-icon">✦</div>
@@ -650,7 +485,6 @@ const PHOTO_DATA = "PHOTO_PLACEHOLDER";
         </div>
       </div>
     </div>
-
     <div class="about-photo-wrap animate-up" style="transition-delay:0.15s">
       <img id="aboutPhoto" src="za%20sajt.jpg" alt="Sava Pivnički psiholog — individualno psihološko savetovanje Srbija" class="about-photo">
       <div class="about-badge">
@@ -664,8 +498,8 @@ const PHOTO_DATA = "PHOTO_PLACEHOLDER";
 <!-- SERVICES -->
 <section class="section section-dark" id="oblasti">
   <div class="services-header animate-up">
-    <div class="section-tag" style="justify-content:center">U čemu mogu mogu da ti pomognem</div>
-    <h2 class="section-title">Oblasti na kojima <em> možemo raditi </em></h2>
+    <div class="section-tag" style="justify-content:center">U čemu mogu da ti pomognem</div>
+    <h2 class="section-title">Oblasti na kojima <em>možemo raditi</em></h2>
   </div>
   <div class="services-grid animate-up">
     <div class="service-card">
@@ -772,12 +606,12 @@ const PHOTO_DATA = "PHOTO_PLACEHOLDER";
 <section class="section section-dark">
   <div style="text-align:center" class="animate-up">
     <div class="section-tag" style="justify-content:center">Pitanja</div>
-    <h2 class="section-title">Pre nego što <em> mi pišeš...</em></h2>
+    <h2 class="section-title">Pre nego što <em>mi pišeš...</em></h2>
   </div>
   <div class="faq-wrap animate-up">
     <div class="faq-item">
       <button class="faq-q">Da li je ovo terapija? <span class="faq-arrow">+</span></button>
-      <div class="faq-a">Ne. Ovo je psihološko savetovanje — razlika je važna. Psiholog koji savetuje radi sa svakodnevnim izazovima, krizama i ličnim razvojem. Ne bavim se terapeutskim radom . Ako procenim da ti treba nešto više od savetovanja, otvoreno ću ti reći i uputiti te dalje.</div>
+      <div class="faq-a">Ne. Ovo je psihološko savetovanje — razlika je važna. Psiholog koji savetuje radi sa svakodnevnim izazovima, krizama i ličnim razvojem. Ne bavim se terapeutskim radom. Ako procenim da ti treba nešto više od savetovanja, otvoreno ću ti reći i uputiti te dalje.</div>
     </div>
     <div class="faq-item">
       <button class="faq-q">Koliko košta sesija? <span class="faq-arrow">+</span></button>
@@ -789,7 +623,7 @@ const PHOTO_DATA = "PHOTO_PLACEHOLDER";
     </div>
     <div class="faq-item">
       <button class="faq-q">Kako izgleda online sesija? <span class="faq-arrow">+</span></button>
-      <div class="faq-a">Online sesije su jednako eefikasne kao i one  uživo. Koristimo video poziv — Zoom ili Viber. Potreban ti je miran prostor i stabilna veza. Online format odgovara onima koji su van Srbije ili nemaju mogućnost da dođu lično.</div>
+      <div class="faq-a">Online sesije su jednako efikasne kao i one uživo. Koristimo video poziv — Zoom ili Viber. Potreban ti je miran prostor i stabilna veza. Online format odgovara onima koji su van Srbije ili nemaju mogućnost da dođu lično.</div>
     </div>
     <div class="faq-item">
       <button class="faq-q">Nisam siguran da li mi treba pomoć — šta da radim? <span class="faq-arrow">+</span></button>
@@ -826,34 +660,41 @@ const PHOTO_DATA = "PHOTO_PLACEHOLDER";
 
     <div class="booking-form animate-up" style="transition-delay:0.2s">
       <p class="form-title">Pošalji poruku</p>
-      <div class="form-row">
-        <div class="form-group">
-          <label class="form-label">Ime</label>
-          <input type="text" placeholder="Tvoje ime">
+      <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+        <input type="hidden" name="access_key" value="b6137b15-f8ae-49c9-b992-798c5efd7d61">
+        <input type="hidden" name="subject" value="Nova poruka sa sajta — Psihološko savetovanje">
+        <input type="hidden" name="from_name" value="Sajt Sava Pivnički">
+        <input type="checkbox" name="botcheck" style="display:none">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Ime</label>
+            <input type="text" name="ime" placeholder="Tvoje ime" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Telefon</label>
+            <input type="tel" name="telefon" placeholder="+381 6X XXX XXXX">
+          </div>
         </div>
         <div class="form-group">
-          <label class="form-label">Telefon</label>
-          <input type="tel" placeholder="+381 6X XXX XXXX">
+          <label class="form-label">Email</label>
+          <input type="email" name="email" placeholder="tvoj@email.com" required>
         </div>
-      </div>
-      <div class="form-group">
-        <label class="form-label">Email</label>
-        <input type="email" placeholder="tvoj@email.com">
-      </div>
-      <div class="form-group">
-        <label class="form-label">Format</label>
-        <select>
-          <option value="">Izaberi...</option>
-          <option>Online sesija</option>
-          <option>Uživo</option>
-          <option>Najpre slobodan razgovor</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label class="form-label">Poruka (opciono)</label>
-        <textarea placeholder="Ukratko — šta te navelo da pišeš..."></textarea>
-      </div>
-      <button class="form-submit">Pošalji →</button>
+        <div class="form-group">
+          <label class="form-label">Format</label>
+          <select name="format">
+            <option value="">Izaberi...</option>
+            <option>Online sesija</option>
+            <option>Uživo</option>
+            <option>Najpre slobodan razgovor</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Poruka (opciono)</label>
+          <textarea name="poruka" placeholder="Ukratko — šta te navelo da pišeš..."></textarea>
+        </div>
+        <button type="submit" class="form-submit" id="submitBtn">Pošalji →</button>
+        <div id="formMsg" style="display:none;margin-top:1rem;padding:0.8rem 1rem;font-size:0.85rem;"></div>
+      </form>
     </div>
   </div>
 </section>
@@ -902,14 +743,11 @@ const PHOTO_DATA = "PHOTO_PLACEHOLDER";
 </footer>
 
 <script>
-
-// Scroll animations
 const obs = new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("visible")});
 },{threshold:0.1,rootMargin:"0px 0px -40px 0px"});
 document.querySelectorAll(".animate-up").forEach(el=>obs.observe(el));
 
-// FAQ
 document.querySelectorAll(".faq-q").forEach(btn=>{
   btn.addEventListener("click",()=>{
     const item=btn.closest(".faq-item");
@@ -919,10 +757,42 @@ document.querySelectorAll(".faq-q").forEach(btn=>{
   });
 });
 
-// Nav scroll
 const nav=document.getElementById("mainNav");
 window.addEventListener("scroll",()=>{
   nav.style.boxShadow=window.scrollY>60?"0 2px 40px rgba(0,0,0,0.5)":"none";
+});
+
+document.getElementById("contactForm").addEventListener("submit", async function(e) {
+  e.preventDefault();
+  const btn = document.getElementById("submitBtn");
+  const msg = document.getElementById("formMsg");
+  btn.textContent = "Šalje se...";
+  btn.disabled = true;
+  try {
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: new FormData(this)
+    });
+    const data = await res.json();
+    if (data.success) {
+      msg.style.display = "block";
+      msg.style.background = "rgba(122,158,126,0.15)";
+      msg.style.border = "1px solid rgba(122,158,126,0.4)";
+      msg.style.color = "#a3c4a8";
+      msg.textContent = "✓ Poruka je poslata. Javim ti se uskoro.";
+      this.reset();
+    } else {
+      throw new Error("Greška");
+    }
+  } catch(err) {
+    msg.style.display = "block";
+    msg.style.background = "rgba(200,80,80,0.1)";
+    msg.style.border = "1px solid rgba(200,80,80,0.3)";
+    msg.style.color = "#e08080";
+    msg.textContent = "✗ Greška pri slanju. Pokušaj ponovo ili piši direktno na psihotrot@gmail.com";
+  }
+  btn.textContent = "Pošalji →";
+  btn.disabled = false;
 });
 </script>
 
